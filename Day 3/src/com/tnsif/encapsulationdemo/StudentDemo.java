@@ -5,7 +5,7 @@ public class StudentDemo {
 
 	public static void main(String[] args) {
 		
-		Object
+		
 		Student s1=new Student();
 		s1.setName("hitika");
 		//System.out.println("Name of the s1 " +s1.getName());
