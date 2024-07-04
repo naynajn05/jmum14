@@ -18,10 +18,11 @@ public class Customer {
 	//use of this keyword
 	public Customer(String name, int id, String city) {
 		
-		this();
+		this(); // to call default constructor
 		this.name = name;
 		this.id = id;
 		this.city = city;
+		//this();  //CTE
 	}
 
 
