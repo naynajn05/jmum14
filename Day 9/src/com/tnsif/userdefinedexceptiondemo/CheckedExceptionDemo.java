@@ -12,5 +12,6 @@ public class CheckedExceptionDemo {
 		} catch (IOException e) {
 			System.err.println("An error occurred while reading input: " + e.getMessage());
 		}
+		
 	}
 }
