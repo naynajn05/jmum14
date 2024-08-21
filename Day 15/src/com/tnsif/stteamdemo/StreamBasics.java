@@ -19,10 +19,10 @@ public class StreamBasics {
 
 		
 		//way 2 from arrays
-		Integer[] values=new Integer[] {12,56,4,67,78,89,45,67,2};
+		Integer[] values=new Integer[] {1,2,3,4,5};
 		Stream<Integer> str=Arrays.stream(values);
 		//map to calculate square of stream values
-		str.map(num->num*num).forEach(System.out::println);
+		str.map(num->num*2).forEach(System.out::println);
 		//str1.forEach(System.out::println);
 		
 		System.out.println("----------------------");
@@ -34,10 +34,13 @@ public class StreamBasics {
 		
 		
 		//way 3 Collections
-		List<String> names=Arrays.asList("Aditya","Om","Shardul","Manish","Mayuresh");		
+		List<String> names=Arrays.asList("Aditya","Om","Shardul","Manish","Mayuresh");
+		//names.forEach(System.out::println);
 		//names.stream().map(name->name.toUpperCase()).forEach(System.out::println);
 		List<String> newNames=names.stream().map(name->name.toUpperCase()).collect(Collectors.toList());
 		System.out.println(newNames);
+		
+		
 	}
 
 }
